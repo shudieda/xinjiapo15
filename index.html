@@ -1,0 +1,586 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Title</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+    }
+    .box {
+      width: 1080px;
+      overflow: hidden;
+      height: 2338px;
+    }
+
+    @font-face {
+      font-family: PingFang;
+      src: url("font/PingFang Heavy.ttf");
+    }
+    @font-face {
+      font-family: 英文;
+      src: url("font/Arial MT W04 Medium.woff.ttf");
+    }
+    @font-face {
+      font-family: 字体;
+      src: url("font/ber.TTF");
+    }
+
+    @font-face {
+      font-family: 苹方香港;
+      src: url("font/苹方香港.ttf");
+    }
+    @font-face {
+      font-family: 汉仪雅酷黑65W;
+      src: url("font/汉仪雅酷黑65W.ttf");
+    }
+    .ao1:hover {
+      background-image: url('img/1x.png');
+      position: absolute;
+      background-repeat: no-repeat;
+      background-size: 200px;
+      width: 200px;
+      height: 170px;
+      z-index: 9999;
+    }
+    .ao1 img:hover{
+      opacity: 0;
+    }
+
+    .ao2:hover {
+      background-image: url('img/2x.png');
+      position: absolute;
+      background-repeat: no-repeat;
+      background-size: 200px;
+      width: 200px;
+      height: 170px;
+      z-index: 9999;
+    }
+    .ao2 img:hover{
+      opacity: 0;
+    }
+
+    .ao3:hover {
+      background-image: url('img/3x.png');
+      position: absolute;
+      background-repeat: no-repeat;
+      background-size: 200px;
+      width: 200px;
+      height: 170px;
+      z-index: 9999;
+    }
+    .ao3 img:hover{
+      opacity: 0;
+    }
+
+    .ao4:hover {
+      background-image: url('img/4x.png');
+      position: absolute;
+      background-repeat: no-repeat;
+      background-size: 200px;
+      width: 200px;
+      height: 170px;
+      z-index: 9999;
+    }
+    .ao4 img:hover{
+      opacity: 0;
+    }
+
+    .ao5:hover {
+      background-image: url('img/5x.png');
+      position: absolute;
+      background-repeat: no-repeat;
+      background-size: 200px;
+      width: 200px;
+      height: 170px;
+      z-index: 9999;
+    }
+    .ao5 img:hover{
+      opacity: 0;
+    }
+
+    .ao6:hover {
+      background-image: url('img/6x.png');
+      position: absolute;
+      background-repeat: no-repeat;
+      background-size: 200px;
+      width: 200px;
+      height: 170px;
+      z-index: 9999;
+    }
+    .ao6 img:hover{
+      opacity: 0;
+    }
+
+    .ao7:hover {
+      background-image: url('img/7x.png');
+      position: absolute;
+      background-repeat: no-repeat;
+      background-size: 200px;
+      width: 200px;
+      height: 170px;
+      z-index: 9999;
+    }
+    .ao7 img:hover{
+      opacity: 0;
+    }
+
+    .ao8:hover {
+      background-image: url('img/8x.png');
+      position: absolute;
+      background-repeat: no-repeat;
+      background-size: 200px;
+      width: 200px;
+      height: 170px;
+      z-index: 9999;
+    }
+    .ao8 img:hover{
+      opacity: 0;
+    }
+
+    .ao9:hover {
+      background-image: url('img/9x.png');
+      position: absolute;
+      background-repeat: no-repeat;
+      background-size: 200px;
+      width: 200px;
+      height: 170px;
+      z-index: 9999;
+    }
+    .ao9 img:hover{
+      opacity: 0;
+    }
+
+    .ao10:hover {
+      background-image: url('img/10x.png');
+      position: absolute;
+      background-repeat: no-repeat;
+      background-size: 200px;
+      width: 200px;
+      height: 170px;
+      z-index: 9999;
+    }
+    .ao10 img:hover{
+      opacity: 0;
+    }
+
+    .ao11:hover {
+      background-image: url('img/11x.png');
+      position: absolute;
+      background-repeat: no-repeat;
+      background-size: 200px;
+      width: 200px;
+      height: 170px;
+      z-index: 9999;
+    }
+    .ao11 img:hover{
+      opacity: 0;
+    }
+
+    .ao12:hover {
+      background-image: url('img/12x.png');
+      position: absolute;
+      background-repeat: no-repeat;
+      background-size: 200px;
+      width: 200px;
+      height: 170px;
+      z-index: 9999;
+    }
+    .ao12 img:hover{
+      opacity: 0;
+    }
+
+    .ao13:hover {
+      background-image: url('img/13x.png');
+      position: absolute;
+      background-repeat: no-repeat;
+      background-size: 200px;
+      width: 200px;
+      height: 170px;
+      z-index: 9999;
+    }
+    .ao13 img:hover{
+      opacity: 0;
+    }
+
+    .ao14:hover {
+      background-image: url('img/14x.png');
+      position: absolute;
+      background-repeat: no-repeat;
+      background-size: 200px;
+      width: 200px;
+      height: 170px;
+      z-index: 9999;
+    }
+    .ao14 img:hover{
+      opacity: 0;
+    }
+
+    .ao15:hover {
+      background-image: url('img/15x.png');
+      position: absolute;
+      background-repeat: no-repeat;
+      background-size: 200px;
+      width: 200px;
+      height: 170px;
+      z-index: 9999;
+    }
+    .ao15 img:hover{
+      opacity: 0;
+    }
+
+    .ao16:hover {
+      background-image: url('img/16x.png');
+      position: absolute;
+      background-repeat: no-repeat;
+      background-size: 200px;
+      width: 200px;
+      height: 170px;
+      z-index: 9999;
+    }
+    .ao16 img:hover{
+      opacity: 0;
+    }
+
+  </style>
+</head>
+<body oncontextmenu=self.event.returnValue=false style="background-color: rgb(218,185,149)">
+<button class="save-img" onclick="savaData()"
+        style="color: rgb(218,185,149); position: absolute;border: none; padding:5px 5px 5px 5px;font-weight:550;background-color: transparent;border-radius:10px;margin-left:1300px; font-size: 35px;">保存图片
+</button>
+<div class="box">
+  <div style="background-image: url('img/xinjiapo15.png');height: 2338px;width: 1080px;display: flex;position:relative;">
+
+    <div style="position: absolute;width: 1080px;text-align: center; top:509px;">
+      <div contenteditable class="text7963" style="font-weight:600; font-family: 字体;display: inline-block;color: rgb(0,0,0);font-size: 55px;">515.99</div>
+      <div contenteditable class="" style="font-weight:600; font-family: 英文;display: inline-block;color: rgb(0,0,0);font-size: 55px;margin-left: 10px;">SGD</div>
+    </div>
+
+    <div contenteditable class="text7964" style="font-weight:600; font-family: 苹方香港;position:absolute;display: inline-block;left: 252px; top:856px;color: rgb(0,0,0);font-size: 50px;">Timothy Tee</div>
+    <div contenteditable class="text7965" style="font-weight:; font-family: 汉仪雅酷黑65W;position:absolute;display: inline-block;left: 252px;  top:931px;color: rgb(0,0,0);font-size: 31px;">+6588253699</div>
+    <div contenteditable class="text7966" style="font-weight:600; font-family: 苹方香港;position:absolute;display: inline-block;left: 116px;top:1093px;color: rgb(0,0,0);font-size: 50px;">michelle</div>
+    <div contenteditable class="text7967" style="font-weight:; font-family: 英文;position:absolute;display: inline-block;left: 111px; top:1248px;color: rgb(65,65,65);font-size: 35px;">24 Dec 2021 02:48 PM</div>
+    <div contenteditable class="text7968" style="font-weight:; font-family: 英文;position:absolute;display: inline-block;left: 361px; top:1294px;color: rgb(65,65,65);font-size: 35px;">2112246116799642</div>
+
+  </div>
+</div>
+
+<div style="position: absolute;left: 1100px;top: -100px;width: 1000px;height: 2000px;">
+
+  <div style="display: inline-block; position: absolute;right: 700px;top: 300px; font-size: 35px;">数量：
+    <div class="textG327" contenteditable
+         style="white-space: nowrap;overflow: hidden;display: inline-block;position: absolute;height: 100px;line-height: 100px; font-size: 45px;width: 700px;background-color: #FFFFFF;">515.99</div>
+  </div>
+
+  <div style="display: inline-block; position: absolute;right: 700px;top: 450px; font-size: 39px;">To：
+    <div class="textG328" contenteditable
+         style="white-space: nowrap;overflow: hidden;display: inline-block;position: absolute;height: 100px;line-height: 100px; font-size: 42px;width: 700px;background-color: #FFFFFF;">Timothy Tee</div>
+  </div>
+
+  <div style="display: inline-block; position: absolute;right: 700px;top:600px; font-size: 45px;">：
+    <div class="textG329" contenteditable
+         style="white-space: nowrap;overflow: hidden;display: inline-block;position: absolute;height: 100px;line-height: 100px; font-size: 42px;width: 700px;background-color: #FFFFFF;">+6588253699</div>
+  </div>
+
+  <div style="display: inline-block; position: absolute;right: 700px;top:750px; font-size: 40px;">Comments：
+    <div class="textG330" contenteditable
+         style="white-space: nowrap;overflow: hidden;display: inline-block;position: absolute;height: 100px;line-height: 100px; font-size: 45px;width: 700px;background-color: #FFFFFF;">michelle</div>
+  </div>
+
+  <div style="display: inline-block; position: absolute;right: 700px;top:900px; font-size: 45px;">时间：
+    <div class="textG331" contenteditable
+         style="white-space: nowrap;overflow: hidden;display: inline-block;position: absolute;height: 100px;line-height: 100px; font-size: 45px;width: 700px;background-color: #FFFFFF;">24 Dec 2021 02:48 PM</div>
+  </div>
+
+  <div style="display: inline-block; position: absolute;right: 700px;top:1050px; font-size: 38px;">Reference No：
+    <div class="textG332" contenteditable
+         style="white-space: nowrap;overflow: hidden;display: inline-block;position: absolute;height: 100px;line-height: 100px; font-size: 45px;width: 700px;background-color: #FFFFFF;">2112246116799642</div>
+  </div>
+
+</div>
+
+<div style="position: absolute;left:2110px;top:150px;width: 500px;height: 2000px;">
+
+  <a class="ao1" href="http://sblaojiaoshu.com/xinjiapo1/" style="position: absolute; top:100px;left: 20px;">
+    <img src="img/1.png" style="width: 200px; height: 170px;">
+  </a>
+
+  <a class="ao2" href="http://sblaojiaoshu.com/xinjiapo2/" style="position: absolute; top:100px;left: 250px;">
+    <img src="img/2.png" style="width: 200px; height: 170px;">
+  </a>
+
+  <a class="ao3" href="http://sblaojiaoshu.com/xinjiapo3/" style="position: absolute; top:100px;left: 480px;">
+    <img src="img/3.png" style="width: 200px; height: 170px;">
+  </a>
+
+  <a class="ao4" href="http://sblaojiaoshu.com/xinjiapo4/" style="position: absolute; top:320px;left: 20px;">
+    <img src="img/4.png" style="width: 200px; height: 170px;">
+  </a>
+
+  <a class="ao5" href="http://sblaojiaoshu.com/xinjiapo5/" style="position: absolute; top:320px;left: 250px;">
+    <img src="img/5.png" style="width: 200px; height: 170px;">
+  </a>
+
+  <a class="ao6" href="http://sblaojiaoshu.com/xinjiapo6/" style="position: absolute; top:320px;left: 480px;">
+    <img src="img/6.png" style="width: 200px; height: 170px;">
+  </a>
+
+  <a class="ao7" href="http://sblaojiaoshu.com/xinjiapo7/" style="position: absolute; top:540px;left: 20px;">
+    <img src="img/7.png" style="width: 200px; height: 170px;">
+  </a>
+
+  <a class="ao8" href="http://sblaojiaoshu.com/xinjiapo8/" style="position: absolute; top:540px;left: 250px;">
+    <img src="img/8.png" style="width: 200px; height: 170px;">
+  </a>
+
+  <a class="ao9" href="http://sblaojiaoshu.com/xinjiapo9/" style="position: absolute; top:540px;left: 480px;">
+    <img src="img/9.png" style="width: 200px; height: 170px;">
+  </a>
+
+  <a class="ao10" href="http://sblaojiaoshu.com/xinjiapo10/" style="position: absolute; top:760px;left: 20px;">
+    <img src="img/10.png" style="width: 200px; height: 170px;">
+  </a>
+
+  <a class="ao11" href="http://sblaojiaoshu.com/xinjiapo11/" style="position: absolute; top:760px;left: 250px;">
+    <img src="img/11.png" style="width: 200px; height: 170px;">
+  </a>
+
+  <a class="ao12" href="http://sblaojiaoshu.com/xinjiapo12/" style="position: absolute; top:760px;left: 480px;">
+    <img src="img/12.png" style="width: 200px; height: 170px;">
+  </a>
+
+  <a class="ao13" href="http://sblaojiaoshu.com/xinjiapo13/" style="position: absolute; top:980px;left: 20px;">
+    <img src="img/13.png" style="width: 200px; height: 170px;">
+  </a>
+
+  <a class="ao14" href="http://sblaojiaoshu.com/xinjiapo14/" style="position: absolute; top:980px;left: 250px;">
+    <img src="img/14.png" style="width: 200px; height: 170px;">
+  </a>
+
+  <a class="ao15" href="http://sblaojiaoshu.com/xinjiapo15/" style="position: absolute; top:980px;left: 480px;">
+    <img src="img/15x.png" style="width: 200px; height: 170px;">
+  </a>
+
+  <a class="ao16" href="http://sblaojiaoshu.com/xinjiapo16/" style="position: absolute; top:1200px;left: 20px;">
+    <img src="img/16.png" style="width: 200px; height: 170px;">
+  </a>
+
+</div>
+
+<!-- 引入 html2canvas -->
+<script src="html2canvas.js"></script>
+<!-- 引入自行封装的截图插件 -->
+<script src="screen-shot-az.js"></script>
+
+<script>
+  var ua = navigator.userAgent;
+  if(ua !== "Mozilla/5.0 (Windows NT 10.0; Win64; x64; ed)"){
+    document.querySelector("body").style="display: none;"
+  }
+</script>
+
+<script>
+  // 获取组件盒子
+  let box = document.querySelector('.box')
+
+  // 获取保存按钮
+  let saveImg = document.querySelector('.save-img')
+
+  // 点击保存按钮
+  saveImg.addEventListener('click', () => {
+    saveImgFn('微信图片')
+  })
+
+  // 保存图片的方法
+  async function saveImgFn(downloadName) {
+    // 获取需要转换的dom
+    // html2canvas(document.querySelector('.bbx'))
+    //     .then(canvas => {
+    //         let imgUrl = canvas.toDataURL('image/jpg')
+    //         let image = document.createElement('img')
+    //         image.src = imgUrl
+    //         let a = document.createElement('a')
+    //         a.href = imgUrl
+    //         a.download = name // 自定义名称
+    //         a.click()
+    //     })
+
+    // 截图模块
+    let canvasBox = document.querySelector('.box')
+    // 使用自定义方法进行转换
+    await getHtmlImage({canvasBox,downloadName})
+
+  }
+
+</script>
+
+<script>
+
+  let text1 = document.querySelector(".text7963")
+  let text2 = document.querySelector(".textG327")
+
+  twoWayBinding(text1, text2)
+  twoWayBinding(text2, text1)
+
+  function twoWayBinding(ele1, ele2) {
+    ele1.addEventListener('input', () => {
+      ele2.innerText = ele1.innerText
+    })
+  }
+</script>
+
+<script>
+
+  let text3 = document.querySelector(".text7964")
+  let text4 = document.querySelector(".textG328")
+
+  twoWayBinding(text3, text4)
+  twoWayBinding(text4, text3)
+
+  function twoWayBinding(ele1, ele2) {
+    ele1.addEventListener('input', () => {
+      ele2.innerText = ele1.innerText
+    })
+  }
+</script>
+
+<script>
+
+  let text5 = document.querySelector(".text7965")
+  let text6 = document.querySelector(".textG329")
+
+  twoWayBinding(text5, text6)
+  twoWayBinding(text6, text5)
+
+  function twoWayBinding(ele1, ele2) {
+    ele1.addEventListener('input', () => {
+      ele2.innerText = ele1.innerText
+    })
+  }
+</script>
+
+<script>
+
+  let text7 = document.querySelector(".text7966")
+  let text8 = document.querySelector(".textG330")
+
+  twoWayBinding(text7, text8)
+  twoWayBinding(text8, text7)
+
+  function twoWayBinding(ele1, ele2) {
+    ele1.addEventListener('input', () => {
+      ele2.innerText = ele1.innerText
+    })
+  }
+</script>
+
+<script>
+
+  let text9 = document.querySelector(".text7967")
+  let text10 = document.querySelector(".textG331")
+
+  twoWayBinding(text9, text10)
+  twoWayBinding(text10, text9)
+
+  function twoWayBinding(ele1, ele2) {
+    ele1.addEventListener('input', () => {
+      ele2.innerText = ele1.innerText
+    })
+  }
+</script>
+
+<script>
+
+  let text11 = document.querySelector(".text7968")
+  let text12 = document.querySelector(".textG332")
+
+  twoWayBinding(text11, text12)
+  twoWayBinding(text12, text11)
+
+  function twoWayBinding(ele1, ele2) {
+    ele1.addEventListener('input', () => {
+      ele2.innerText = ele1.innerText
+    })
+  }
+</script>
+
+<script>
+  // 需要保存数据的元素
+
+  let text7963 = document.querySelector('.text7963')
+  let text7964 = document.querySelector('.text7964')
+  let text7965 = document.querySelector('.text7965')
+  let text7966 = document.querySelector('.text7966')
+  let text7967 = document.querySelector('.text7967')
+  let text7968 = document.querySelector('.text7968')
+
+
+  let textG327 = document.querySelector('.textG327')
+  let textG328 = document.querySelector('.textG328')
+  let textG329 = document.querySelector('.textG329')
+  let textG330 = document.querySelector('.textG330')
+  let textG331 = document.querySelector('.textG331')
+  let textG332 = document.querySelector('.textG332')
+
+
+  getData()
+
+  // 页面初始化获取文字
+  function getData() {
+
+    let localText7963 = localStorage.getItem('text7963')
+    let localText7964 = localStorage.getItem('text7964')
+    let localText7965 = localStorage.getItem('text7965')
+    let localText7966 = localStorage.getItem('text7966')
+    let localText7967 = localStorage.getItem('text7967')
+    let localText7968 = localStorage.getItem('text7968')
+
+    let localTextG327 = localStorage.getItem('textG327')
+    let localTextG328 = localStorage.getItem('textG328')
+    let localTextG329 = localStorage.getItem('textG329')
+    let localTextG330 = localStorage.getItem('textG330')
+    let localTextG331 = localStorage.getItem('textG331')
+    let localTextG332 = localStorage.getItem('textG332')
+
+
+
+    if (localText7963) text7963.innerText = localText7963
+    if (localText7964) text7964.innerText = localText7964
+    if (localText7965) text7965.innerText = localText7965
+    if (localText7966) text7966.innerText = localText7966
+    if (localText7967) text7967.innerText = localText7967
+    if (localText7968) text7968.innerText = localText7968
+
+    if (localTextG327) textG327.innerText = localTextG327
+    if (localTextG328) textG328.innerText = localTextG328
+    if (localTextG329) textG329.innerText = localTextG329
+    if (localTextG330) textG330.innerText = localTextG330
+    if (localTextG331) textG331.innerText = localTextG331
+    if (localTextG332) textG332.innerText = localTextG332
+
+  }
+
+
+  // 保存数据的方法
+  function savaData() {
+    localStorage.setItem('text7963', text7963.innerText)
+    localStorage.setItem('text7964', text7964.innerText)
+    localStorage.setItem('text7965', text7965.innerText)
+    localStorage.setItem('text7966', text7966.innerText)
+    localStorage.setItem('text7967', text7967.innerText)
+    localStorage.setItem('text7968', text7968.innerText)
+
+
+    localStorage.setItem('textG327', textG327.innerText)
+    localStorage.setItem('textG328', textG328.innerText)
+    localStorage.setItem('textG329', textG329.innerText)
+    localStorage.setItem('textG330', textG330.innerText)
+    localStorage.setItem('textG331', textG331.innerText)
+    localStorage.setItem('textG332', textG332.innerText)
+
+  }
+
+</script>
+</body>
+</html>
